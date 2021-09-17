@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ------------Required meta tags------------ -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- ------------Bootstrap 4.5.3------------ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    
+
+    <!-- ------------Fontawesome------------ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" />
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.min.js"></script>
+
+    <!-- ------------CSS------------ -->
+    <link rel="stylesheet" href="styles/login.css" />
+
+    <!-- ------------Title------------ -->
+    <title>Good@</title>
+  </head>
+  <body>
+
+    <!-- ------------navbar------------ -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light shadow">
+        <a class="navbar-brand" href="index.html">Good@</a>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto navLinks">
+            <li class="nav-item Task tasklog">
+              <a class="nav-link task" href="#">Become A Provider</a>
+            </li>
+            <li class="nav-item homeLinks">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item homeLinks">
+                <a class="nav-link" href="signup.html">Sign up</a>
+            </li>
+          </ul>
+          
+        </div>
+    </nav>
+
+    <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark bg-white shadow">
+      <div class="row" id="myDIV">
+        <a class="col-8-lg navIco1 active" href="index.html"><span class="fa fa-search"></span></a>
+        <a class="col-8-lg navIco2" href="#"><span class="fa fa-list"></span></a>
+        <a class="col-8-lg navIco3" href="#"><span class="fa fa-user-o"></span></a>
+      </div>
+      
+    </nav>
+
+    <!-- ------------Sign Up------------ -->
+    <div class="container-fluid">
+      <div class="bk-img1">
+        <img src="img/bk-header2.jpeg" class="pix shadow-lg"/>
+        <br>
+        <h5 class="pixText">GARDENING</h5>
+      </div>
+      <div class="bk-img2">
+        <img src="img/bk-header1.jpg" class="pix shadow-lg"/>
+        <br>
+        <h5 class="pixText">HOME CLEANING</h5>
+      </div>
+      <div class="bk-img3">
+        <img src="img/card1.jpeg" class="pix shadow-lg"/>
+        <h5 class="pixText">PUMBLING</h5>
+      </div>
+   
+        <div class="container-fluid SignUp">
+            <div class="txt float-left">
+                <h1>Welcome to Good at</h1>
+                <p>All the service you need in just <span>one place!</span></p>
+            </div>
+
+            <div class="sginWay float-right">
+
+                <div class="txtbg">
+                  <h1>Welcome to Good at</h1>
+                  <p>All the service you need in just <br><span>one place!</span></p>
+                </div>
+
+                <button class="btn btn-light google"><img src="img/google.ico" height="24px" width="24px"> Continue With Google</button>
+                <button class="btn btn-primary fb"><span class="fa fa-facebook"> </span> Continue With Facebook</button>
+                <small class="text-muted smtxt">OR LOGIN WITH PHONE</small>
+                <hr>
+                <h3 class="loginTxt">Login</h3>
+                
+                <form action="/action_page.php">
+                    <div class="form-group col-lg-12">
+                        <label class="float-left">Phone Number</label>
+                        <input type="tel" class="form-control pho" id="phone">
+                    </div>
+    
+                    <div class="form-group col-lg-12">
+                        <label class="float-left">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Password" required>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1"><small class="text-muted">Keep me logged in. </small></label>
+                        <small class="forgot"><a href="forgPass.html">Forgot Password</a></small>
+                    </div>
+                    <a href="index.html"><button class="btn btn-dark ph">Login</button></a>
+                    <div class="log"><small class="text-muted">Don't have an account? </small><a href="signup.html">Sign up</a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------footer------------ -->
+    <footer class="container-fluid border-top">
+      <div class="row fot">
+
+          <div class="col-12 col-md">
+            <h2 class="mb-2 goodat"><b>Good at</b></h2>
+          </div>
+
+          <div class="col-6 col-md">
+            <h3>Services</h3>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">House Work</a></li>
+              <li><a class="text-muted" href="#">Home Caring</a></li>
+              <li><a class="text-muted" href="#">Team feature</a></li>
+              <li><a class="text-muted" href="#">Artistic</a></li>
+              <li><a class="text-muted" href="#">Cooking / Baking</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md">
+            <h3>Support</h3>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Contact Us</a></li>
+              <li><a class="text-muted" href="#">About Us</a></li>
+              <li><a class="text-muted" href="#">How Good At Works</a></li>
+              <li><a class="text-muted" href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md">
+            <h3>Follow us</h3>
+            <div class="row">
+              <a class="social"><span class="fa fa-facebook"> </span></a>
+              <a class="social"><span class="fa fa-youtube"> </span></a>
+              <a class="social"><span class="fa fa-instagram"> </span></a>
+            </div>
+            <p class="text-muted selCount" >Select Country</p>
+            <form action="">
+              <select class="forma">
+                <option value="  " selected>Select a country</option>
+                <option value="--">Not Specified</option>
+                <option value="AL">Albania</option>
+                <option value="AM">Armenia</option>
+                <option value="AU">Australia</option>
+                <option value="AT">Austria</option>
+                <option value="BY">Belarus</option>
+                <option value="BE">Belgium</option>
+                <option value="BO">Bolivia</option>
+                <option value="BA">Bosnia and Herzegowina</option>
+                <option value="BW">Botswana</option>
+                <option value="BG">Bulgaria</option>
+                <option value="CA">Canada</option>
+                <option value="CY">Cyprus</option>
+                <option value="CZ">Czech Republic</option>
+                <option value="DK">Denmark</option>
+                <option value="EG">Egypt</option>
+                <option value="SV">El Salvador</option>
+                <option value="EE">Estonia</option>
+                <option value="FI">Finland</option>
+                <option value="FR">France</option> 
+                <option value="GE">Georgia</option>
+                <option value="DE">Germany</option>
+                <option value="HU">Hungary</option>
+                <option value="IS">Iceland</option>
+                <option value="IE">Ireland</option>
+                <option value="IT">Italy</option>
+                <option value="LV">Latvia</option>
+                <option value="NL">Netherlands</option>
+                <option value="AN">Netherlands Antilles</option>
+                <option value="NC">New Caledonia</option>
+                <option value="NZ">New Zealand</option>
+                <option value="NO">Norway</option>
+                <option value="PY">Paraguay</option>
+                <option value="PL">Poland</option>
+                <option value="RO">Romania</option>
+                <option value="ES">Spain</option>
+                <option value="SZ">Swaziland</option>
+                <option value="SE">Sweden</option>
+                <option value="CH">Switzerland</option>
+                <option value="TR">Turkey</option>
+                <option value="US">United States</option>
+                <option value="UY">Uruguay</option>
+                <option value="VE">Venezuela</option>
+                <option value="WF">Wallis and Futuna Islands</option>
+              </select>
+          </div>
+
+          <div class="col-12 col-md">
+            <button class="btn btn-dark">Become A Provider</button>
+          </div>
+
+      </div>
+      <div class="footer-copyright text-center py-3">
+        <small class="copyR">© 2021 Good at, All Rights Received.</small> </div>
+    </footer>
+    
+
+    <script>
+
+        var input = document.querySelector("#phone");
+        
+        intlTelInput(input,
+        {
+            initialCountry: "auto",
+            geoIpLookup: function (success, failure)
+            {
+                $.get("https://ipinfo.io", function () { }, "jsonp").always(function (resp)
+                {
+                    var countryCode = (resp && resp.country) ? resp.country : "us";
+                    success(countryCode);
+                });
+            },
+        });
+
+        function provider(){
+            var mail = document.querySelector(".email");
+            mail.toggleAttribute("required");
+            $(".mail").toggle();
+
+            var phone = document.querySelector(".pho");
+            phone.toggleAttribute("required");
+
+            if( document.querySelector(".phone").innerHTML != "*")
+                document.querySelector(".phone").innerHTML = "*";
+            
+            else
+                $(".phone").toggle();
+
+        }
+
+    </script> 
+
+    <!--jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  </body>
+</html>

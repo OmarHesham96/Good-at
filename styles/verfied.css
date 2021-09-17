@@ -1,0 +1,364 @@
+body
+{
+    background-color: rgb(255, 217, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ------------ Navbar ------------ */
+.bg-light
+{
+    background-color: #ffffff!important;
+}
+
+
+.navbar-light .navbar-brand
+{
+    color: rgb(255, 217, 0);
+    margin-left: 10%;
+    font-weight:bolder;
+    font-size: 200%;
+}
+.navbar-light .navbar-brand:hover {
+    color: rgb(255, 217, 0);
+}
+
+@media screen and (max-width: 480px)
+{
+    .navbar-light .navbar-brand
+    {
+        margin-left: 35%;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link
+{
+    color: black;
+}
+
+.navLinks
+{
+    padding-right: 10%;
+}
+
+.Task
+{
+    margin-right: 50px;
+    margin-top: 5px;
+    width: 202px;
+    height: 52px;
+    border: 1px solid black;
+    border-radius: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-link.task
+{
+    margin-top: 4.5px;
+    width: 205px;
+    height: 60px;
+}
+
+.navbar-light .navbar-nav .Task .task:hover
+{
+    color: white;
+}
+
+.Task:hover{
+    background-color: rgb(63, 62, 62);
+}
+
+.tasklog
+{
+    margin-right: 60px;
+}
+
+.homeLinks
+{
+    margin-top: 2%;
+    margin-right: 40px;
+}
+
+.badge {
+    position: absolute;
+    top: 19px;
+    right: 314px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+  }
+
+.dropdown-toggle
+{
+    width: 160px;
+}
+
+.dropdown-menu
+{
+    border-color: white;
+    border-radius: 25px;
+    width: 15vw;
+    height: 28.2vh;
+}
+
+.dropdown-item
+{
+    font-size: 90%;
+    color: grey;
+    padding-left: 10%;
+}
+
+@media (min-width: 768px)
+{
+    .animate
+    {
+      animation-duration: 0.3s;
+      -webkit-animation-duration: 0.3s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
+    }
+}
+  
+@keyframes slideIn
+{
+    0%
+    {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  
+    100%
+    {
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+  
+    0%
+    {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+}
+  
+@-webkit-keyframes slideIn
+{
+    0%
+    {
+      -webkit-transform: transform;
+      -webkit-opacity: 0;
+    }
+  
+    100%
+    {
+      -webkit-transform: translateY(0);
+      -webkit-opacity: 1;
+    }
+  
+    0%
+    {
+      -webkit-transform: translateY(1rem);
+      -webkit-opacity: 0;
+    }
+}
+  
+.slideIn
+{
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+}
+
+.pf-img
+{
+    width: 3vw;
+    border-radius: 25px;
+}
+
+.pf-link
+{
+    padding-left: 10px;
+}
+
+@media screen and (min-width: 768px)
+{
+    .fixed-bottom
+    {
+        display: none;
+    }
+}
+.fixed-bottom
+{
+    height: 9%;
+}
+
+.navIco1
+{
+    margin-left: 35px;
+    font-size: 150%;
+    color: grey;
+}
+
+.navIco
+{
+    margin-left: 55px;
+    font-size: 150%;
+    color: grey;
+}
+
+.row .active{
+
+    border-top-width: 40px;
+    border-top: rgb(255, 217, 0);
+}
+
+/* ------------ Fontawesome ------------ */
+span .fa
+{
+    font-size: 130%;
+    line-height: 2;
+}
+
+.nav-link .fa-bell-o{
+    margin-right: 25px;
+    margin-top: 10px;
+    font-size: 130%;
+}
+
+/* ------------Sgin Up Header------------ */
+
+
+.SignUp
+{
+    text-align: center;  
+}
+
+.sginWay 
+{   
+   
+    margin: 5% 30%;
+    border-radius: 25px;
+    background-color: #f8f9fa;
+    padding: 5%;
+    text-align: center;
+    height: 550px;
+
+}
+@media screen and (max-width: 480px)
+{
+    .sginWay
+    {
+        margin: 5% 10%;
+        height: 500px;
+    }
+    .sginWay .row{
+        display: block;
+    }
+
+    .sginWay .row .btn 
+    {
+        width: 70%;
+    }
+}
+
+
+.sginWay img{
+    border-radius: 50%;
+    margin: 10%;
+}
+.sginWay p{
+    margin-top: 5%;
+}
+
+.sginWay .row{
+    margin-top:15% ;
+}
+.sginWay .row .btn 
+{
+    width: 80%;
+    border-radius: 25px;
+    font-size: 80%;
+    margin: 3%;
+}
+
+/* ------------Footer------------ */
+
+footer
+{
+    height: 50vh;
+    background-color: whitesmoke;
+}
+
+.fot
+{
+    margin-top: 5%;
+}
+
+
+footer h3
+{
+    margin-bottom: 15%;
+}
+
+.goodat
+{
+    line-height: 200px;
+    margin-left: 95px;
+    color: grey;
+}
+
+footer div .btn
+{
+    width: 80%;
+    height: 45px;
+    border-radius: 25px;
+    margin-bottom: 3%;
+}
+
+.fot li
+{
+    margin-top: 6%;
+}
+
+footer .fa
+{
+    font-size: 150%;
+    color: black;
+    padding-top: 5px;
+    padding-left: 12px;
+}
+
+.social
+{
+    height: 5vh;
+    width: 15%;
+    margin-left: 20px;
+    background-color: rgb(221, 219, 219);
+    border-radius: 20px;
+}
+
+.selCount
+{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.copyR
+{
+    color: grey;
+    margin-left: 20%;
+}
+
+.footer-copyright
+{
+    width: 655px;
+    margin-bottom: 5%;
+}
+.forma:first-child{
+    color: grey;
+  }
+@media screen and (max-width: 480px)
+{
+    footer
+    {
+        display: none;
+    }
+}
+ 
