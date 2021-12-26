@@ -1,0 +1,1090 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ------------Required meta tags------------ -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- ------------Bootstrap 4.5.3------------ -->
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+
+    <!-- ------------CSS------------ -->
+    <link rel="stylesheet" href="styles/myServices.css" />
+
+    <!-- ------------Fontawesome------------ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" />
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.min.js"></script>
+
+    <!-- ------------Jquery------------ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- ------------Title------------ -->
+    <title>Good@</title>
+  </head>
+  <body>
+
+    <!-- ------------navbar------------ -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light shadow">
+        <a class="navbar-brand" href="indexLogin.html">Good@</a>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto navLinks">
+            <li class="nav-item Task">
+              <a class="nav-link task" href="#" data-toggle="modal" data-target="#exampleModal"><span class="fa fa-plus"></span> Add Service / Task</a>
+            </li>
+            <li class="nav-item dropdown noti">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-bell-o"></span><span class="badge">3</span></a>
+                <div class="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown">
+                  <small> Today</small>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <img src="img/person2.png" width="40px" height="40px">
+                    <h6>Tyler Hart</h6>            <span class="time">12:30PM</span>
+                    <p>Added a new Gardening service check it now!</p>
+                  </a>
+
+                  <a class="dropdown-item" href="#">
+                    <img src="img/preson1.png" width="40px" height="40px">
+                    <h6>Dan Woodkin</h6>            <span class="time1">12:00PM</span>
+                    <p>Added a new Gardening service check it now!</p>
+                  </a>
+
+                  <a class="dropdown-item" href="#">
+                    <img src="img/myServIco.svg" width="40px" height="40px">
+                    <h6>5 New Service Around!</h6>            <span class="time2">11:59AM</span>
+                    <p>Check the latest Electric work services Around!</p>
+                  </a>
+                  <small>Yasterday</small>
+                  <div class="dropdown-divider"></div>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="myAccount.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="img/profile-pix.jpg" alt="profile pic." class="pf-img"/>  
+                  <span class="pf-link"> Chris Bailey </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="myAccount.html"><span><i class="fa fa-user-o"></i></span> My Account</a>
+                  <a class="dropdown-item" href="myFav.html"><span><i class="fa fa-heart-o"></i></span> My Favorites</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="index.html"><span><i class="fa fa-sign-out"></i></span> Logout</a>
+                </div>
+              </li>
+          </ul>
+        </div>
+    </nav>
+    
+    <!-- Add Task Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h2 class="modal-title  w-100" id="exampleModalLabel">Listing a service or task?</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <a href="addNewService.html"> <img class="leftico" src="img/listico.svg"> </a>
+                <h5 class="leftTitle">List a service</h5>
+                <small>If you are a service provider and want to show your services to the customers.</small> 
+              </div>
+              <div class="col-lg-6">
+                <a href="requestTask.html"><img class="rightico" src="img/rightico.svg"> </a>
+                <h5>List a task</h5>
+                <small>If your are a customer and looking for someone to do a task for you.</small>
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark bg-white shadow">
+      <div class="row" id="myDIV">
+        <a class="col-1-lg navIco" href="index.html"><span class="fa fa-search"></span></a>
+        <a class="col-1-lg navIco active" href="myServices.html"><span class="fa fa-list"></span></a>
+        <a class="col-1-lg navIco" href="myFav.html"><span class="fa fa-heart-o"></span></a>
+        <a class="col-1-lg navIco" href="#"><span class="fa fa-bell-o"></span></a>
+        <a class="col-1-lg navIco" href="myAccount.html"><span class="fa fa-user-o"></span></a>
+      </div>
+      
+    </nav>
+    
+    <!-- ------------Mobile View------------ -->
+    <div class="mobileView">
+      <h3 class="Mhead"><span class="underline">Services</span></h3>
+      <p class="disabled">All the services you need in just one place!</p>
+
+      <h5 class="subHead">House Work</h5>
+      <div class="car horizontal-scroll-wrapper">
+        <div class="cards">
+          <img src="img/WithCircle-ic.svg"/>
+          <br>
+          <span>Cleaning</span>
+        </div>
+        <div class="cards">
+          <img src="img/WithCircle-ic (1).svg"/>
+          <br>
+          <span>Electric Work</span>
+        </div>
+        <div class="cards">
+          <img src="img/WithCircle-ic (2).svg"/>
+          <br>
+          <span>Gardening</span>
+        </div>
+        <div class="cards">
+            
+        </div>
+        <div class="cards">
+            
+        </div>
+        <div class="cards">
+            
+        </div>
+      </div>
+
+      <h5 class="subHead">Home Caring</h5>
+      <div class="car horizontal-scroll-wrapper">
+        <div class="cards">
+          <img src="img/WithCircle-ic (3).svg"/>
+          <br>
+          <span>Adult care</span>
+        </div>
+        <div class="cards">
+          <img src="img/WithCircle-ic (4).svg"/>
+          <br>
+          <span>Child minding</span>
+        </div>
+        <div class="cards">
+          <img src="img/WithCircle-ic (5).svg"/>
+          <br>
+          <span>Nursing</span>
+        </div>
+        <div class="cards">
+            
+        </div>
+        <div class="cards">
+            
+        </div>
+        <div class="cards">
+            
+        </div>
+      </div>
+
+      <h5 class="subHead">Artistic</h5>
+      <div class="car horizontal-scroll-wrapper">
+        <div class="cards">
+          <img src="img/WithCircle-ic (6).svg"/>
+          <br>
+          <span>Wedding<br>planning</span>
+        </div>
+        <div class="cards">
+          <img src="img/WithCircle-ic (7).svg"/>
+          <br>
+          <span>Photo shooting</span>
+        </div>
+        <div class="cards">
+          <img src="img/WithCircle-ic (8).svg"/>
+          <br>
+          <span>Decorating</span>
+        </div>
+        <div class="cards">
+            
+        </div>
+        <div class="cards">
+            
+        </div>
+        <div class="cards">
+            
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ------------Side nav------------ -->
+
+    <div class="header row">
+      <div class="sidebar">
+        <div class="groupAction">
+          <a href="myAccount.html" class=""><i class="fa fa-user-o"></i> <span class="text">My Account</span></a>
+          <a href="changePass.html" class="" ><i><img src="img/changePass.svg"></i> <span class="text">Change Password</span></a>
+          <a href="myFav.html" class="" ><i class="fa fa-heart-o"></i> <span class="text">My Favorites</span></a>
+          <a href="myServices.html" class="active"><i><img src="img/myServIco.svg"></i> <span class="text">My Services/ Tasks</span></a>
+          <a href="mySub.html"><i><img src="img/rocketIco.svg"></i> <span class="text">Subscriptions</span></a>
+        </div>
+      </div>
+        
+      <div class="main">
+        <div class="main-top">
+        <h5>MY SERVICES AND TASKS</h5>
+        <small class="txt">You have total 4 Services.</small>
+        <!-- Tab links -->
+        
+            <div class="tab">
+                <button class="tablinks active btnServ" onclick="openCity(event, 'Services')">Services</button>
+                <button class="tablinks btnPro" onclick="openCity(event, 'Providers')"> Tasks</button>
+            </div>
+
+        </div>
+        
+        <!-- Tab content -->
+        <div id="Services" class="tabcontent tabcontent1">
+            <div class="category horizontal-scroll-wrapper">
+                <button type="button" class="btn btns active" >All</button>
+                <button type="button" class="btn btns" >Cleaning</button>
+                <button type="button" class="btn btns" >Gardening</button>
+                <button type="button" class="btn btns">Painting</button>
+                <button type="button" class="btn btns">Plumbing</button>
+                <button type="button" class="btn btns">Tiling</button>
+                <button type="button" class="btn btns">Electric Work</button>
+            </div>
+
+            <div class="cardServices">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">1</li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1">2</li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2">3</li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row">
+                            <div class="card col-5 ml-3 ">
+                                <div class="card-body">
+                                <img src="img/card1.jpeg" class="card-img">
+                                <h6 class="card-title">Consectetur neque lobortis</h6>
+                                <p class="pricing">Start from 10$</p>
+                                <br>
+                                <small>Plumbing</small>
+                                <br>
+                                <small class="wait">Waiting For Approved</small>
+                                </div>
+                            </div>
+                            
+                            <div class="card col-5 ml-4 mr-2">
+                                <div class="card-body">
+                                <img src="img/card1.jpeg" class="card-img">
+                                <h6 class="card-title">Aliquam porta lectus</h6>
+                                <p class="pricing">Start from 10$</p>
+                                <br>
+                                <small>Plumbing</small>
+                                <br>
+                                <small class="published">Published</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="card col-5 ml-3 ">
+                              <div class="card-body">
+                              <img src="img/card1.jpeg" class="card-img">
+                              <h6 class="card-title">Consectetur neque lobortis</h6>
+                              <p class="pricing">Start from 10$</p>
+                              <br>
+                              <small>Plumbing</small>
+                              <br>
+                              <small class="published">Published</small>
+                              </div>
+                          </div>
+                          
+                          <div class="card col-5 ml-4 mr-2">
+                              <div class="card-body">
+                              <img src="img/card1.jpeg" class="card-img">
+                              <h6 class="card-title">Aliquam porta lectus</h6>
+                              <p class="pricing">Start from 10$</p>
+                              <br>
+                              <small>Plumbing</small>
+                              <br>
+                              <small class="published">Published</small>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="card col-5 ml-3 ">
+                            <div class="card-body">
+                            <img src="img/card1.jpeg" class="card-img">
+                            <h6 class="card-title">Consectetur neque lobortis</h6>
+                            <p class="pricing">Start from 10$</p>
+                            <br>
+                            <small>Plumbing</small>
+                            <br>
+                            <small class="published">Published</small>
+                            </div>
+                        </div>
+                        
+                        <div class="card col-5 ml-4 mr-2">
+                            <div class="card-body">
+                            <img src="img/card1.jpeg" class="card-img">
+                            <h6 class="card-title">Aliquam porta lectus</h6>
+                            <p class="pricing">Start from 10$</p>
+                            <br>
+                            <small>Plumbing</small>
+                            <br>
+                            <small class="published">Published</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div> 
+        </div>
+
+        <div id="Providers" class="tabcontent profCards">
+            <div class="cardServices">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">1</li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1">2</li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2">3</li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row">
+                            <div class="card col ml-3">
+                                <div class="card-body">
+                                  <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                  <img src="img/pro1.png">
+                                  <h6 class="card-title">Craig McDonald</h6>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                  <small>(3.0)</small>
+                                  <br>
+                                  <small class="pop">based on 8 ratings</small>
+                                  <br>
+                                  <small>Plumbing</small>
+                                  <br>
+                                  <button class="butto"><small>View Services</small></button>
+                                </div>
+                            </div>
+        
+                            <div class="card col ml-2 mr-2">
+                              <div class="card-body">
+                                <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                <img src="img/pro2.png">
+                                <h6 class="card-title">Sara Carrol</h6>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <small>(3.0)</small>
+                                <br>
+                                <small class="pop">based on 8 ratings</small>
+                                <br>
+                                <small>Gardening</small>
+                                <br>
+                                <button class="butto"><small>View Services</small></button>
+                              </div>
+                            </div>
+        
+                            <div class="card col mr-3">
+                              <div class="card-body">
+                                <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                <img src="img/pro3.png">
+                                <h6 class="card-title">Vencit Weber</h6>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <small>(3.0)</small>
+                                <br>
+                                <small class="pop">based on 8 ratings</small>
+                                <br>
+                                <small>Electric Work</small>
+                                <br>
+                                <button class="butto"><small>View Services</small></button>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="card col ml-3">
+                                <div class="card-body">
+                                  <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                  <img src="img/pro1.png">
+                                  <h6 class="card-title">Craig McDonald</h6>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                  <small>(3.0)</small>
+                                  <br>
+                                  <small class="pop">based on 8 ratings</small>
+                                  <br>
+                                  <small>Plumbing</small>
+                                  <br>
+                                  <button class="butto"><small>View Services</small></button>
+                                </div>
+                            </div>
+        
+                            <div class="card col ml-2 mr-2">
+                              <div class="card-body">
+                                <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                <img src="img/pro2.png">
+                                <h6 class="card-title">Sara Carrol</h6>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <small>(3.0)</small>
+                                <br>
+                                <small class="pop">based on 8 ratings</small>
+                                <br>
+                                <small>Gardening</small>
+                                <br>
+                                <button class="butto"><small>View Services</small></button>
+                              </div>
+                            </div>
+        
+                            <div class="card col mr-3">
+                              <div class="card-body">
+                                <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                <img src="img/pro3.png">
+                                <h6 class="card-title">Vencit Weber</h6>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <small>(3.0)</small>
+                                <br>
+                                <small class="pop">based on 8 ratings</small>
+                                <br>
+                                <small>Electric Work</small>
+                                <br>
+                                <button class="butto"><small>View Services</small></button>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="card col ml-3">
+                                <div class="card-body">
+                                  <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                  <img src="img/pro1.png">
+                                  <h6 class="card-title">Craig McDonald</h6>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                  <small>(3.0)</small>
+                                  <br>
+                                  <small class="pop">based on 8 ratings</small>
+                                  <br>
+                                  <small>Plumbing</small>
+                                  <br>
+                                  <button class="butto"><small>View Services</small></button>
+                                </div>
+                            </div>
+        
+                            <div class="card col ml-2 mr-2">
+                              <div class="card-body">
+                                <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                <img src="img/pro2.png">
+                                <h6 class="card-title">Sara Carrol</h6>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <small>(3.0)</small>
+                                <br>
+                                <small class="pop">based on 8 ratings</small>
+                                <br>
+                                <small>Gardening</small>
+                                <br>
+                                <button class="butto"><small>View Services</small></button>
+                              </div>
+                            </div>
+        
+                            <div class="card col mr-3">
+                              <div class="card-body">
+                                <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                <img src="img/pro3.png">
+                                <h6 class="card-title">Vencit Weber</h6>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <small>(3.0)</small>
+                                <br>
+                                <small class="pop">based on 8 ratings</small>
+                                <br>
+                                <small>Electric Work</small>
+                                <br>
+                                <button class="butto"><small>View Services</small></button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="row">
+                            <div class="card col ml-3">
+                                <div class="card-body">
+                                  <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                  <img src="img/pro1.png">
+                                  <h6 class="card-title">Craig McDonald</h6>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                  <small>(3.0)</small>
+                                  <br>
+                                  <small class="pop">based on 8 ratings</small>
+                                  <br>
+                                  <small>Plumbing</small>
+                                  <br>
+                                  <button class="butto"><small>View Services</small></button>
+                                </div>
+                            </div>
+        
+                            <div class="card col ml-2 mr-2">
+                              <div class="card-body">
+                                <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                <img src="img/pro2.png">
+                                <h6 class="card-title">Sara Carrol</h6>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <small>(3.0)</small>
+                                <br>
+                                <small class="pop">based on 8 ratings</small>
+                                <br>
+                                <small>Gardening</small>
+                                <br>
+                                <button class="butto"><small>View Services</small></button>
+                              </div>
+                            </div>
+        
+                            <div class="card col mr-3">
+                              <div class="card-body">
+                                <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                <img src="img/pro3.png">
+                                <h6 class="card-title">Vencit Weber</h6>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <small>(3.0)</small>
+                                <br>
+                                <small class="pop">based on 8 ratings</small>
+                                <br>
+                                <small>Electric Work</small>
+                                <br>
+                                <button class="butto"><small>View Services</small></button>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="card col ml-3">
+                                <div class="card-body">
+                                  <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                  <img src="img/pro1.png">
+                                  <h6 class="card-title">Craig McDonald</h6>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                  <small>(3.0)</small>
+                                  <br>
+                                  <small class="pop">based on 8 ratings</small>
+                                  <br>
+                                  <small>Plumbing</small>
+                                  <br>
+                                  <button class="butto"><small>View Services</small></button>
+                                </div>
+                            </div>
+        
+                            <div class="card col ml-2 mr-2">
+                              <div class="card-body">
+                                <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                <img src="img/pro2.png">
+                                <h6 class="card-title">Sara Carrol</h6>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <small>(3.0)</small>
+                                <br>
+                                <small class="pop">based on 8 ratings</small>
+                                <br>
+                                <small>Gardening</small>
+                                <br>
+                                <button class="butto"><small>View Services</small></button>
+                              </div>
+                            </div>
+        
+                            <div class="card col mr-3">
+                              <div class="card-body">
+                                <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                <img src="img/pro3.png">
+                                <h6 class="card-title">Vencit Weber</h6>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <small>(3.0)</small>
+                                <br>
+                                <small class="pop">based on 8 ratings</small>
+                                <br>
+                                <small>Electric Work</small>
+                                <br>
+                                <button class="butto"><small>View Services</small></button>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="card col ml-3">
+                                <div class="card-body">
+                                  <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                  <img src="img/pro1.png">
+                                  <h6 class="card-title">Craig McDonald</h6>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                  <small>(3.0)</small>
+                                  <br>
+                                  <small class="pop">based on 8 ratings</small>
+                                  <br>
+                                  <small>Plumbing</small>
+                                  <br>
+                                  <button class="butto"><small>View Services</small></button>
+                                </div>
+                            </div>
+        
+                            <div class="card col ml-2 mr-2">
+                              <div class="card-body">
+                                <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                <img src="img/pro2.png">
+                                <h6 class="card-title">Sara Carrol</h6>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <small>(3.0)</small>
+                                <br>
+                                <small class="pop">based on 8 ratings</small>
+                                <br>
+                                <small>Gardening</small>
+                                <br>
+                                <button class="butto"><small>View Services</small></button>
+                              </div>
+                            </div>
+        
+                            <div class="card col mr-3">
+                              <div class="card-body">
+                                <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                <img src="img/pro3.png">
+                                <h6 class="card-title">Vencit Weber</h6>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <small>(3.0)</small>
+                                <br>
+                                <small class="pop">based on 8 ratings</small>
+                                <br>
+                                <small>Electric Work</small>
+                                <br>
+                                <button class="butto"><small>View Services</small></button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="row">
+                            <div class="card col ml-3">
+                                <div class="card-body">
+                                  <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                  <img src="img/pro1.png">
+                                  <h6 class="card-title">Craig McDonald</h6>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                  <small>(3.0)</small>
+                                  <br>
+                                  <small class="pop">based on 8 ratings</small>
+                                  <br>
+                                  <small>Plumbing</small>
+                                  <br>
+                                  <button class="butto"><small>View Services</small></button>
+                                </div>
+                            </div>
+        
+                            <div class="card col ml-2 mr-2">
+                              <div class="card-body">
+                                <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                <img src="img/pro2.png">
+                                <h6 class="card-title">Sara Carrol</h6>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <small>(3.0)</small>
+                                <br>
+                                <small class="pop">based on 8 ratings</small>
+                                <br>
+                                <small>Gardening</small>
+                                <br>
+                                <button class="butto"><small>View Services</small></button>
+                              </div>
+                            </div>
+        
+                            <div class="card col mr-3">
+                              <div class="card-body">
+                                <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                <img src="img/pro3.png">
+                                <h6 class="card-title">Vencit Weber</h6>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <small>(3.0)</small>
+                                <br>
+                                <small class="pop">based on 8 ratings</small>
+                                <br>
+                                <small>Electric Work</small>
+                                <br>
+                                <button class="butto"><small>View Services</small></button>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="card col ml-3">
+                                <div class="card-body">
+                                  <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                  <img src="img/pro1.png">
+                                  <h6 class="card-title">Craig McDonald</h6>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                  <small>(3.0)</small>
+                                  <br>
+                                  <small class="pop">based on 8 ratings</small>
+                                  <br>
+                                  <small>Plumbing</small>
+                                  <br>
+                                  <button class="butto"><small>View Services</small></button>
+                                </div>
+                            </div>
+        
+                            <div class="card col ml-2 mr-2">
+                              <div class="card-body">
+                                <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                <img src="img/pro2.png">
+                                <h6 class="card-title">Sara Carrol</h6>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <small>(3.0)</small>
+                                <br>
+                                <small class="pop">based on 8 ratings</small>
+                                <br>
+                                <small>Gardening</small>
+                                <br>
+                                <button class="butto"><small>View Services</small></button>
+                              </div>
+                            </div>
+        
+                            <div class="card col mr-3">
+                              <div class="card-body">
+                                <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                <img src="img/pro3.png">
+                                <h6 class="card-title">Vencit Weber</h6>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <small>(3.0)</small>
+                                <br>
+                                <small class="pop">based on 8 ratings</small>
+                                <br>
+                                <small>Electric Work</small>
+                                <br>
+                                <button class="butto"><small>View Services</small></button>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="card col ml-3">
+                                <div class="card-body">
+                                  <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                  <img src="img/pro1.png">
+                                  <h6 class="card-title">Craig McDonald</h6>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star"></span>
+                                  <span class="fa fa-star"></span>
+                                  <small>(3.0)</small>
+                                  <br>
+                                  <small class="pop">based on 8 ratings</small>
+                                  <br>
+                                  <small>Plumbing</small>
+                                  <br>
+                                  <button class="butto"><small>View Services</small></button>
+                                </div>
+                            </div>
+        
+                            <div class="card col ml-2 mr-2">
+                              <div class="card-body">
+                                <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                <img src="img/pro2.png">
+                                <h6 class="card-title">Sara Carrol</h6>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <small>(3.0)</small>
+                                <br>
+                                <small class="pop">based on 8 ratings</small>
+                                <br>
+                                <small>Gardening</small>
+                                <br>
+                                <button class="butto"><small>View Services</small></button>
+                              </div>
+                            </div>
+        
+                            <div class="card col mr-3">
+                              <div class="card-body">
+                                <button class="float-right"><span class="fa fa-heart-o" onclick="like(this)"></span></button>
+                                <img src="img/pro3.png">
+                                <h6 class="card-title">Vencit Weber</h6>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <small>(3.0)</small>
+                                <br>
+                                <small class="pop">based on 8 ratings</small>
+                                <br>
+                                <small>Electric Work</small>
+                                <br>
+                                <button class="butto"><small>View Services</small></button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div> 
+        </div>
+      
+  </div>
+    
+
+</div>
+   <!-- ------------footer------------ -->
+   <footer class="container-fluid border-top">
+    <div class="row fot">
+
+        <div class="col-12 col-md">
+          <h2 class="mb-2 goodat"><b>Good at</b></h2>
+        </div>
+
+        <div class="col-6 col-md">
+          <h3>Services</h3>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">House Work</a></li>
+            <li><a class="text-muted" href="#">Home Caring</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Artistic</a></li>
+            <li><a class="text-muted" href="#">Cooking / Baking</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md">
+          <h3>Support</h3>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Contact Us</a></li>
+            <li><a class="text-muted" href="#">About Us</a></li>
+            <li><a class="text-muted" href="#">How Good At Works</a></li>
+            <li><a class="text-muted" href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md">
+          <h3>Follow us</h3>
+          <div class="row">
+            <a class="social"><span class="fa fa-facebook"> </span></a>
+            <a class="social"><span class="fa fa-youtube"> </span></a>
+            <a class="social"><span class="fa fa-instagram"> </span></a>
+          </div>
+          <p class="text-muted selCount" >Select Country</p>
+          <form action="" >
+            <select class="forma">
+              <option value="  " selected>Select a country</option>
+              <option value="--">Not Specified</option>
+              <option value="AL">Albania</option>
+              <option value="AM">Armenia</option>
+              <option value="AU">Australia</option>
+              <option value="AT">Austria</option>
+              <option value="BY">Belarus</option>
+              <option value="BE">Belgium</option>
+              <option value="BO">Bolivia</option>
+              <option value="BA">Bosnia and Herzegowina</option>
+              <option value="BW">Botswana</option>
+              <option value="BG">Bulgaria</option>
+              <option value="CA">Canada</option>
+              <option value="CY">Cyprus</option>
+              <option value="CZ">Czech Republic</option>
+              <option value="DK">Denmark</option>
+              <option value="EG">Egypt</option>
+              <option value="SV">El Salvador</option>
+              <option value="EE">Estonia</option>
+              <option value="FI">Finland</option>
+              <option value="FR">France</option> 
+              <option value="GE">Georgia</option>
+              <option value="DE">Germany</option>
+              <option value="HU">Hungary</option>
+              <option value="IS">Iceland</option>
+              <option value="IE">Ireland</option>
+              <option value="IT">Italy</option>
+              <option value="LV">Latvia</option>
+              <option value="NL">Netherlands</option>
+              <option value="AN">Netherlands Antilles</option>
+              <option value="NC">New Caledonia</option>
+              <option value="NZ">New Zealand</option>
+              <option value="NO">Norway</option>
+              <option value="PY">Paraguay</option>
+              <option value="PL">Poland</option>
+              <option value="RO">Romania</option>
+              <option value="ES">Spain</option>
+              <option value="SZ">Swaziland</option>
+              <option value="SE">Sweden</option>
+              <option value="CH">Switzerland</option>
+              <option value="TR">Turkey</option>
+              <option value="US">United States</option>
+              <option value="UY">Uruguay</option>
+              <option value="VE">Venezuela</option>
+              <option value="WF">Wallis and Futuna Islands</option>
+            </select>
+        </div>
+
+        <div class="col-12 col-md">
+          <button class="btn btn-dark be"><a href="signup.html">Become A Provider</a></button>
+        </div>
+
+    </div>
+    <div class="footer-copyright text-center py-3">
+      <small class="copyR">© 2021 Good at, All Rights Received.</small>
+    </div>
+  </footer>
+    
+    <script>
+        function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = $(".tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = $(".tablinks");
+        
+        document.getElementById(cityName).style.display = "block";
+        
+        }
+
+        $(".tablinks").click(function()
+        {
+          $(".tablinks").removeClass("active");
+          $(this).addClass(" active");
+        });
+
+        $(".tablinks").click(function()
+        {
+          $(".tablinks").removeClass("active");
+          $(this).addClass(" active");
+        });
+
+        $(".btns").click(function()
+        {
+          $(".btns").removeClass("active");
+          $(this).addClass("active");
+        });
+
+        function like(x)
+        {
+            x.classList.toggle("liked");
+        }
+
+        $(".btns").click(function()
+        {
+          $(".btns").removeClass("active");
+          $(this).addClass("active");
+        });
+    </script>
+
+    <!--jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  </body>
+</html>

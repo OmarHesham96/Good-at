@@ -12,12 +12,17 @@ body
     }
 }
 
-
+a
+{
+    text-decoration: none;
+    color: #333;
+}
 /* ------------ Navbar ------------ */
 .bg-light
 {
     background-color: #ffffff!important;
 }
+
 
 
 .navbar-light .navbar-brand
@@ -44,10 +49,18 @@ body
     color: rgb(255, 217, 0);
 }
 
-.navLinks
+.nav-link
 {
-    padding-right: 10%;
+
+    margin-right: 50px;
+    margin-top: 10px;
 }
+
+.s
+{
+    font-size: 85%;
+}
+
 
 .Task
 {
@@ -400,7 +413,17 @@ footer
     height: 50vh;
     background-color: whitesmoke;
 }
+footer a
+{
+    text-decoration: none;
+    color: white;
+}
 
+footer a:hover
+{
+    text-decoration: none;
+    color: white;
+}
 .fot
 {
     margin-top: 5%;

@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ------------Required meta tags------------ -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- ------------Bootstrap 4.5.3------------ -->
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+
+    <!-- ------------CSS------------ -->
+    <link rel="stylesheet" href="styles/addService2.css" />
+
+    <!-- ------------Fontawesome------------ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" />
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.min.js"></script>
+
+    <!-- ------------Jquery------------ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- ------------Title------------ -->
+    <title>Good@</title>
+  </head>
+  <body>
+
+    <body>
+
+      <!-- ------------navbar------------ -->
+      <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light shadow">
+          <a class="navbar-brand" href="indexLogin.html">Good@</a>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto navLinks">
+              <li class="nav-item Task">
+                <a class="nav-link task" href="#" data-toggle="modal" data-target="#exampleModal"><span class="fa fa-plus"></span> Add Service / Task</a>
+              </li>
+              <li class="nav-item dropdown noti">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-bell-o"></span><span class="badge">3</span></a>
+                  <div class="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown">
+                    <small> Today</small>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                      <img src="img/person2.png" width="40px" height="40px">
+                      <h6>Tyler Hart</h6>            <span class="time">12:30PM</span>
+                      <p>Added a new Gardening service check it now!</p>
+                    </a>
+  
+                    <a class="dropdown-item" href="#">
+                      <img src="img/preson1.png" width="40px" height="40px">
+                      <h6>Dan Woodkin</h6>            <span class="time1">12:00PM</span>
+                      <p>Added a new Gardening service check it now!</p>
+                    </a>
+  
+                    <a class="dropdown-item" href="#">
+                      <img src="img/myServIco.svg" width="40px" height="40px">
+                      <h6>5 New Service Around!</h6>            <span class="time2">11:59AM</span>
+                      <p>Check the latest Electric work services Around!</p>
+                    </a>
+                    <small>Yasterday</small>
+                    <div class="dropdown-divider"></div>
+                  </div>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="img/profile-pix.jpg" alt="profile pic." class="pf-img"/>  
+                    <span class="pf-link"> Chris Bailey </span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="myAccount.html"><span><i class="fa fa-user-o"></i></span> My Account</a>
+                    <a class="dropdown-item" href="myFav.html"><span><i class="fa fa-heart-o"></i></span> My Favorites</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="index.html"><span><i class="fa fa-sign-out"></i></span> Logout</a>
+                  </div>
+                </li>
+            </ul>
+          </div>
+      </nav>
+      
+      <!-- Add Task Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h2 class="modal-title  w-100" id="exampleModalLabel">Listing a service or task?</h2>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-lg-6">
+                  <a href="addNewService.html"> <img class="leftico" src="img/listico.svg"> </a>
+                  <h5 class="leftTitle">List a service</h5>
+                  <small>If you are a service provider and want to show your services to the customers.</small> 
+                </div>
+                <div class="col-lg-6">
+                  <a href="requestTask.html"><img class="rightico" src="img/rightico.svg"> </a>
+                  <h5>List a task</h5>
+                  <small>If your are a customer and looking for someone to do a task for you.</small>
+                </div>
+  
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <nav class="navbar fixed-bottom bg-white">
+        <div class="">
+          <a class="col-1-lg navIco active" href="search.html"><span class="fa fa-search"></span></a>
+          <a class="col-1-lg navIco" href="myServices.html"><span class="fa fa-list"></span></a>
+          <a class="col-1-lg navIco" href="myFav.html"><span class="fa fa-heart-o"></span></a>
+          <a class="col-1-lg navIco" href="#"><span class="fa fa-bell-o"></span></a>
+          <a class="col-1-lg navIco" href="myAccount.html"><span class="fa fa-user-o"></span></a>
+        </div>
+        
+      </nav>
+
+    <!-- ------------Add New Service Fourm ------------ -->
+    <p class="address"><a href="indexLogin.html">Home</a> / Submit A Service</p>
+    
+    <div class="serviceFourm">
+        <div class="row">
+            <div class="col-3 progressIco">
+                <img class="formIco1" src="img/form-ic-done1.svg">
+                <div class="vertical"></div>
+                <div class="infoTxt"><small>Informations</small></div>
+                <div class="vertical1"></div>
+                <img class="formIco2" src="img/pics-ic-done.svg">
+                <div class="vertical2"></div>
+                <div class="picTxt"><small>Pictures</small></div>
+                <div class="vertical3"></div>
+                <div class="formIco3"><img src="img/form-ic3.svg"></div>
+                <div class="vertical4"></div>
+                <div class="locTxt"><small>Location</small></div>
+                
+            </div>
+            <div class="col-9">
+                <form>
+                    <h4>ADD A NEW SERVICE</h4>
+                    <p class="serTitle">Add your service location.</p>
+                    <div class="form-group">
+                      <label for="exampleInputService1">Service Location</label>
+                      <input type="text" class="form-control city" id="exampleInputService1" placeholder="&#xf041; Your Service Location">   
+                    </div>
+
+                    <div class="form-group">
+                      <div id="map-container-google-1" class="z-depth-1-half map-container">
+                        <iframe src="https://maps.google.com/maps?q=helsinki&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"style="border:0" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                    <i class="fa fa-info-circle"><small> need to add at least the main picture of the service.</small></i>
+                    <br>
+
+                    <button class="btn btn-dark submit" onclick="location.href='serviceSubmitted.html'" type="button"> Submit Service </button>
+                    <button class="btn btn-light cancel" onclick="location.href='addNewService1.html'" type="button"> Pervious</button>
+                </form>                  
+            </div>
+        </div>
+    </div>
+
+   
+<!-- ------------footer------------ -->
+<footer class="container-fluid border-top">
+  <div class="row fot">
+
+      <div class="col-12 col-md">
+        <h2 class="mb-2 goodat"><b>Good at</b></h2>
+      </div>
+
+      <div class="col-6 col-md">
+        <h3>Services</h3>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">House Work</a></li>
+          <li><a class="text-muted" href="#">Home Caring</a></li>
+          <li><a class="text-muted" href="#">Team feature</a></li>
+          <li><a class="text-muted" href="#">Artistic</a></li>
+          <li><a class="text-muted" href="#">Cooking / Baking</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md">
+        <h3>Support</h3>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Contact Us</a></li>
+          <li><a class="text-muted" href="#">About Us</a></li>
+          <li><a class="text-muted" href="#">How Good At Works</a></li>
+          <li><a class="text-muted" href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md">
+        <h3>Follow us</h3>
+        <div class="row">
+          <a class="social"><span class="fa fa-facebook"> </span></a>
+          <a class="social"><span class="fa fa-youtube"> </span></a>
+          <a class="social"><span class="fa fa-instagram"> </span></a>
+        </div>
+        <p class="text-muted selCount" >Select Country</p>
+        <form action="" >
+          <select class="forma">
+            <option value="  " selected>Select a country</option>
+            <option value="--">Not Specified</option>
+            <option value="AL">Albania</option>
+            <option value="AM">Armenia</option>
+            <option value="AU">Australia</option>
+            <option value="AT">Austria</option>
+            <option value="BY">Belarus</option>
+            <option value="BE">Belgium</option>
+            <option value="BO">Bolivia</option>
+            <option value="BA">Bosnia and Herzegowina</option>
+            <option value="BW">Botswana</option>
+            <option value="BG">Bulgaria</option>
+            <option value="CA">Canada</option>
+            <option value="CY">Cyprus</option>
+            <option value="CZ">Czech Republic</option>
+            <option value="DK">Denmark</option>
+            <option value="EG">Egypt</option>
+            <option value="SV">El Salvador</option>
+            <option value="EE">Estonia</option>
+            <option value="FI">Finland</option>
+            <option value="FR">France</option> 
+            <option value="GE">Georgia</option>
+            <option value="DE">Germany</option>
+            <option value="HU">Hungary</option>
+            <option value="IS">Iceland</option>
+            <option value="IE">Ireland</option>
+            <option value="IT">Italy</option>
+            <option value="LV">Latvia</option>
+            <option value="NL">Netherlands</option>
+            <option value="AN">Netherlands Antilles</option>
+            <option value="NC">New Caledonia</option>
+            <option value="NZ">New Zealand</option>
+            <option value="NO">Norway</option>
+            <option value="PY">Paraguay</option>
+            <option value="PL">Poland</option>
+            <option value="RO">Romania</option>
+            <option value="ES">Spain</option>
+            <option value="SZ">Swaziland</option>
+            <option value="SE">Sweden</option>
+            <option value="CH">Switzerland</option>
+            <option value="TR">Turkey</option>
+            <option value="US">United States</option>
+            <option value="UY">Uruguay</option>
+            <option value="VE">Venezuela</option>
+            <option value="WF">Wallis and Futuna Islands</option>
+          </select>
+      </div>
+
+      <div class="col-12 col-md">
+        <a href="signup.html"><button class="btn btn-dark be">Become A Provider</button></a>
+      </div>
+
+  </div>
+  <div class="footer-copyright text-center py-3">
+    <small class="copyR">© 2021 Good at, All Rights Received.</small> </div>
+</footer>
+    
+
+    <!--jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  </body>
+</html>

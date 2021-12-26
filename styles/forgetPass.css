@@ -1,0 +1,395 @@
+body
+{
+    background-color: rgb(255, 217, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 480px)
+{
+    body
+    {
+        background-color: whitesmoke;
+    }
+}
+/* ------------ Navbar ------------ */
+.bg-light
+{
+    background-color: #ffffff!important;
+}
+
+
+.navbar-light .navbar-brand
+{
+    color: rgb(255, 217, 0);
+    margin-left: 10%;
+    font-weight:bolder;
+    font-size: 200%;
+}
+.navbar-light .navbar-brand:hover {
+    color: rgb(255, 217, 0);
+}
+
+@media screen and (max-width: 480px)
+{
+    .navbar-light .navbar-brand
+    {
+        margin-left: 35%;
+    }
+}
+
+.navbar-light .navbar-nav
+{
+    color: rgb(255, 217, 0);
+}
+
+.navLinks
+{
+    padding-right: 10%;
+}
+
+.Task
+{
+    margin-right: 50px;
+    margin-top: 5px;
+    width: 202px;
+    height: 52px;
+    border: 1px solid black;
+    border-radius: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-link.task
+{
+    margin-top: 4.5px;
+    width: 205px;
+    height: 60px;
+}
+
+.navbar-light .navbar-nav .Task .task:hover
+{
+    color: white;
+}
+
+.Task:hover{
+    background-color: rgb(63, 62, 62);
+}
+
+.tasklog
+{
+    margin-right: 60px;
+}
+
+.homeLinks
+{
+    margin-top: 2%;
+    margin-right: 40px;
+
+}
+@media screen and (min-width: 768px)
+{
+    .fixed-bottom
+    {
+        display: none;
+    }
+}
+.fixed-bottom{
+    height: 9%;
+}
+
+.navIco1
+{
+    margin-left: 30px;
+    font-size: 150%;
+    color: grey;
+}
+
+.navIco2
+{
+    margin-left: 140.641px;
+    font-size: 150%;
+    color: grey;
+}
+
+.navIco3
+{
+    margin-left: 130.641px; 
+    font-size: 150%;
+    color: grey;
+}
+
+.row .active{
+
+    border-top-width: 40px;
+    border-top: rgb(255, 217, 0);
+}
+
+/* ------------Sgin Up Header------------ */
+.pix{
+    margin-bottom: 5%;
+    width: 10vw;
+    height: 12vh;
+    border-radius: 25px;
+}
+.bk-img1
+{
+    opacity: 0.7;
+    position: absolute;
+    top: 18%;
+    left: 13%;
+    transform: translate(75%, 200%);
+    color: white;
+    text-align: center;
+    font-size: 60%;
+}
+.bk-img1 img
+{
+    width: 10vw;
+    height: 10vh;
+}
+
+.bk-img2
+{
+    opacity: 0.7;
+    position: absolute;
+    top: 62%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 60%;
+}
+.bk-img2 img
+{
+    width: 15vw;
+    height: 15vh;
+}
+
+.bk-img3
+{
+    opacity: 0.7;
+    position: absolute;
+    top: 42%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 60%;
+}
+.bk-img3 img
+{
+    width: 15vw;
+    height: 22vh;
+}
+
+.bk-img4
+{
+    opacity: 0.7;
+    position: absolute;
+    top: 87%;
+    left: 79.2%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 60%;  
+}
+.bk-img4 img
+{
+    width: 19vw;
+    height: 24vh;
+}
+.bk-img5
+{
+    opacity: 0.7;
+    position: absolute;
+    top: 40%;
+    left: 79.2%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 60%;  
+}
+.bk-img5 img
+{
+    width: 15vw;
+    height: 15vh;
+}
+
+.bk-img6
+{
+    opacity: 0.7;
+    position: absolute;
+    top: 77%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 60%;
+}
+.bk-img6 img
+{
+    width: 12vw;
+    height: 20vh;
+}
+.pixText
+{
+    color: orange;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 480px)
+{
+    img, .pixText
+    {
+       display: none;
+    }
+}
+
+.pixText
+{
+    font-size: 150%;
+}
+
+.SignUp
+{
+    text-align: center;  
+}
+
+.sginWay 
+{   
+   
+    margin: 5% 30%;
+    border-radius: 25px;
+    background-color: #f8f9fa;
+    padding: 5%;
+    text-align: center;
+
+}
+@media screen and (max-width: 480px)
+{
+    .sginWay
+    {
+        margin: 5% 10%;
+        height: 90%;
+    }
+}
+
+.sginWay p
+{
+    margin-top: 5%;
+}
+
+
+.sginWay button
+{
+    margin-top: 3%;
+    width: 70%;
+    border-radius: 25px;
+}
+
+.form-group
+{
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.iti.iti--allow-dropdown{
+    width: 100%;
+}
+
+
+
+/* ------------Footer------------ */
+
+footer
+{
+    height: 50vh;
+    background-color: whitesmoke;
+}
+
+.fot
+{
+    margin-top: 5%;
+}
+
+
+footer h3
+{
+    margin-bottom: 15%;
+}
+
+.goodat
+{
+    line-height: 200px;
+    margin-left: 95px;
+    color: grey;
+}
+footer a
+{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover
+{
+    text-decoration: none;
+    color: white;
+}
+
+footer div .btn
+{
+    width: 80%;
+    height: 45px;
+    border-radius: 25px;
+    margin-bottom: 3%;
+}
+
+.fot li
+{
+    margin-top: 6%;
+}
+
+footer .fa
+{
+    font-size: 150%;
+    color: black;
+    padding-top: 5px;
+    padding-left: 12px;
+}
+
+.social
+{
+    height: 5vh;
+    width: 15%;
+    margin-left: 20px;
+    background-color: rgb(221, 219, 219);
+    border-radius: 20px;
+}
+
+.selCount
+{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.copyR
+{
+    color: grey;
+    margin-left: 20%;
+}
+
+.footer-copyright
+{
+    width: 655px;
+    margin-bottom: 5%;
+}
+.forma:first-child{
+    color: grey;
+  }
+@media screen and (max-width: 480px)
+{
+    footer
+    {
+        display: none;
+    }
+}
+ 

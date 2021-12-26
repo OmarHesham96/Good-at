@@ -1,8 +1,17 @@
 body
 {
-    background-color: rgb(255, 217, 0);
+    background-color: #FFE03D;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+@media screen and (max-width: 480px)
+{
+    body
+    {
+        background-color: #FFE03D;
+    }
+}
+
 
 /* ------------ Navbar ------------ */
 .bg-light
@@ -35,10 +44,18 @@ body
     color: rgb(255, 217, 0);
 }
 
-.navLinks
+.nav-link
 {
-    padding-right: 10%;
+
+    margin-right: 50px;
+    margin-top: 10px;
 }
+
+.s
+{
+    font-size: 85%;
+}
+
 
 .Task
 {
@@ -86,35 +103,36 @@ body
         display: none;
     }
 }
-.fixed-bottom{
-    height: 9%;
+.fixed-bottom
+{
+    height: 7%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
 }
 
-.navIco1
-{
-    margin-left: 30px;
+.navIco {
+    padding-left: 57px;
+    padding-right: 56px;
     font-size: 150%;
     color: grey;
+    margin-top: -2.6%;
+    padding-top: 2%;
 }
 
-.navIco2
+.fixed-bottom div .active
 {
-    margin-left: 140.641px;
-    font-size: 150%;
-    color: grey;
-}
-
-.navIco3
-{
-    margin-left: 130.641px; 
-    font-size: 150%;
-    color: grey;
-}
-
-.row .active{
-
-    border-top-width: 40px;
-    border-top: rgb(255, 217, 0);
+    border-top: #FFE03D;
+    border-top-width: 7px;
+    border-bottom:transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-style:solid;
+    color: #333333;
 }
 
 /* ------------Sgin Up Header------------ */
@@ -313,6 +331,12 @@ form .btn{
     height: 45px;
     border-radius: 25px;
     margin-bottom: 3%;
+}
+
+form .btn a
+{
+    text-decoration: none;
+    color: white;
 }
 
 .terms{
